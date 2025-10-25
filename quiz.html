@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
         <style>
-            /* --- Global Reset and Base Styles --- */
+            
             * {
                 margin: 0;
                 padding: 0;
@@ -15,36 +15,34 @@
                 font-family: 'Arial', sans-serif;
             }
 
-            /* --- General Body & Structure Improvements --- */
             body {
-                background-color: #121212; /* Darker background for more depth */
+                background-color: #121212; 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 min-height: 100vh;
             }
 
-            /* --- Header & Logo Refinement --- */
             .header {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 20px 70px; /* More horizontal padding */
+                padding: 20px 70px; 
                 background-color: #121212;
-                border-bottom: 1px solid #343a40; /* Slightly less intense border */
+                border-bottom: 1px solid #343a40; 
             }
 
             .logo {
-                color: #e9ecef; /* Slightly off-white for main text */
-                font-size: 36px; /* Slightly smaller logo for better balance */
+                color: #e9ecef; 
+                font-size: 36px; 
                 font-weight: bold;
                 letter-spacing: 1px;
             }
 
             .end-quiz-btn {
                 background: none;
-                border: 1px solid transparent; /* Border for hover state transition */
+                border: 1px solid transparent; 
                 color: #ffffff;
                 font-size: 16px;
                 font-weight: 500;
@@ -55,12 +53,11 @@
             }
             
             .end-quiz-btn:hover {
-                color: #007bff; /* Primary color on hover */
+                color: #007bff; 
                 background-color: transparent; 
-                border: 1px solid #007bff; /* Subtle border for elegance */
+                border: 1px solid #007bff;
             }
 
-            /* --- Quiz Container & Title Adjustments --- */
             .quiz-container {
                 width: 100%;
                 max-width: 800px;
@@ -69,20 +66,19 @@
             }
 
             .quiz-container h2 {
-                font-size: 36px; /* Make the main title a bit bigger */
+                font-size: 36px; 
                 text-align: center;
                 margin-bottom: 10px;
                 color: #ffffff;
-                font-family: 'Georgia', serif; /* Different font for main title */
+                font-family: 'Georgia', serif;
             }
 
             .subtitle {
                 text-align: center;
-                color: #adb5bd; /* Lighter grey subtitle for better visibility */
+                color: #adb5bd; 
                 margin-bottom: 30px;
             }
 
-            /* --- Progress Bar Enhancements --- */
             .progress-section {
                 display: flex;
                 justify-content: space-between;
@@ -93,7 +89,7 @@
             .progress-bar-container {
                 flex-grow: 1;
                 height: 8px;
-                background-color: #343a40; /* Darker track for better contrast with the bar */
+                background-color: #343a40; 
                 border-radius: 4px;
                 margin-right: 15px;
             }
@@ -101,7 +97,7 @@
             .progress-bar {
                 height: 100%;
                 width: 25%; 
-                background-color: #17a2b8; /* Change to a more vibrant cyan-blue */
+                background: linear-gradient(60deg,rgba(30, 75, 179, 1) 0%, rgba(23, 162, 184, 1) 100%);
                 border-radius: 4px;
                 transition: width 0.3s;
             }
@@ -112,21 +108,19 @@
                 font-weight: 600;
             }
 
-            /* --- Flashcard Styling (Crucial Section) --- */
             .card-wrapper {
-                /* --- Background Image Applied HERE ONLY --- */
                 background-image: url('Wallpaper.jpg'); 
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 border-radius: 12px; 
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger, more elegant shadow */
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
                 
                 perspective: 1000px; 
                 margin: 40px 0;
-                height: 350px; /* Slightly taller card */
-                overflow: hidden; /* Contains the card faces within the wrapper's border-radius */
-                padding: 0; /* No internal padding needed */
+                height: 350px; 
+                overflow: hidden; 
+                padding: 0; 
             }
 
             .quiz-card {
@@ -147,13 +141,12 @@
                 width: 100%;
                 height: 100%;
                 backface-visibility: hidden; 
-                /* Dark, less transparent overlay to ensure readability over the background image */
                 background-color: rgba(0, 0, 0, 0.75); 
                 border-radius: 12px;
                 
                 box-shadow: none; 
                 
-                padding: 50px; /* Increased padding inside the card */
+                padding: 50px; 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -166,7 +159,7 @@
             }
             
             .card-question .label {
-                color: #ffc107; /* Distinct, bright yellow for the question label */
+                color: #ffc107; 
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 10px;
@@ -175,7 +168,7 @@
             }
 
             .card-question .question-text {
-                font-size: 28px; /* Larger question text */
+                font-size: 28px; 
                 font-weight: bold;
                 color: #fff; 
                 margin-bottom: 30px;
@@ -195,16 +188,15 @@
             }
             
             .card-answer .label {
-                color: #17a2b8; /* Use primary color from progress bar */
+                color: #17a2b8; 
             }
             
             .card-answer .answer-text {
-                font-size: 22px; /* Slightly larger answer text */
+                font-size: 22px; 
                 color: #f8f9fa; 
                 line-height: 1.5;
             }
 
-            /* --- Navigation Button Improvements --- */
             .nav-buttons {
                 display: flex;
                 justify-content: space-between;
@@ -216,7 +208,7 @@
                 flex: 1;
                 padding: 12px 30px;
                 border: none;
-                border-radius: 50px; /* Pill-shaped buttons */
+                border-radius: 50px; 
                 font-size: 18px;
                 font-weight: bold;
                 cursor: pointer;
@@ -232,7 +224,7 @@
             }
 
             .btn-previous {
-                background-color: #495057; /* Darker previous button to match the theme */
+                background-color: #495057; 
                 color: #e9ecef;
             }
 
@@ -241,7 +233,7 @@
             }
 
             .btn-next {
-                background-color: #17a2b8; /* Green for 'Next' */
+                background-color: #17a2b8; 
                 color: white;
             }
 
@@ -252,8 +244,8 @@
             .btn-previous:disabled {
                 opacity: 1;
                 cursor: not-allowed;
-                background-color: #343a40; /* Dark disabled background */
-                color: #6c757d; /* Faded text */
+                background-color: #343a40; 
+                color: #6c757d;
             }
         </style>
         
@@ -266,7 +258,7 @@
         </div>
 
         <div class="quiz-container">
-            <h2>JavaScript Fundamentals</h2>
+            <h2>Show What You Got!!!</h2>
             <div class="subtitle">Test your knowledge by flipping the cards.</div>
 
             <div class="progress-section">
@@ -284,7 +276,7 @@
                         <div class="label">QUESTION</div>
 
                         <p class="question-text" id="questionText">
-                            What is a **closure** in JavaScript?
+                            Lorem ipsum dolor sit amet.
                         </p>
 
                         <small class="flip-hint" id="flipHint">
@@ -298,7 +290,7 @@
                         <div class="label">ANSWER</div>
 
                         <p class="answer-text" id="answerText">
-                            A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). This allows a function to access variables from an outer scope after the outer function has finished executing.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, minima, amet repellat labore doloribus molestias hic, excepturi delectus nulla ad. Repudiandae magnam iste repellendus doloremque natus sapiente veritatis facilis!
                         </p>
 
                     </div>
