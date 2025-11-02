@@ -168,6 +168,7 @@ const nextQuestionHandler = () => {
 
 
 flashCard.addEventListener('click', () => {
+
     if (quizData.length > 0 && currentCardIndex <= TOTAL_QUESTIONS) 
     {
         flashCard.classList.toggle('flipped');
@@ -176,6 +177,7 @@ flashCard.addEventListener('click', () => {
 
 
 prevBtn.addEventListener('click', () => {
+
     if (currentCardIndex > 1) 
     {
         currentCardIndex--;
@@ -188,4 +190,6 @@ prevBtn.addEventListener('click', () => {
 endQuizBtn.addEventListener('click', redirectToIndex);
 
 nextBtn.addEventListener('click', nextQuestionHandler); 
+
+
 fetchQuizQuestions();
